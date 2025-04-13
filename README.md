@@ -57,3 +57,40 @@ This project focuses on forecasting the number of Uber pickups in New York City 
 
 - Lag window of 24 hours used to model previous patterns
 - Normalized weights for ensemble prediction:
+
+- 
+## 📈 Model Evaluation
+
+**Evaluation Metric**: Mean Absolute Percentage Error (MAPE)
+
+| Model             | MAPE      |
+|------------------|-----------|
+| XGBoost          | 8.37%     |
+| Random Forest    | 9.61%     |
+| GBTR             | 10.02%    |
+| **Ensemble**     | **8.60%** |
+
+📌 XGBoost achieved the best individual performance, while the ensemble model provided better stability.
+
+## 📊 Results Visualization
+
+- Line plots comparing predicted vs actual hourly pickups
+- Separate plots for each model + combined ensemble plot
+
+## 📂 File Structure
+
+
+## 📬 Future Work
+
+- Add external variables like **weather**, **events**, or **traffic**
+- Explore **deep learning models (LSTM/GRU)** for time series forecasting
+- Build an interactive **dashboard** for real-time trip demand prediction
+
+## 🙌 Acknowledgements
+
+- Data provided by NYC Taxi & Limousine Commission via FOIL request
+- Inspired by public notebooks and studies on Uber trip data forecasting
+
+---
+
+
